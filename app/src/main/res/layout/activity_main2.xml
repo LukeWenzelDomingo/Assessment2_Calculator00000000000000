@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cooking_bg"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:id="@+id/breast"
+        android:layout_width="179dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/breast_chicken"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/leg"
+        android:layout_width="134dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/breast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leg_chicken"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/flour"
+        android:layout_width="154dp"
+        android:layout_height="145dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        app:srcCompat="@drawable/flour"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/stick"
+        android:layout_width="137dp"
+        android:layout_height="127dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
+        app:srcCompat="@drawable/skewer_stick"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="262dp"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fried_chick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/flour_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flour" />
+
+        <RadioButton
+            android:id="@+id/stick_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stick" />
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/fried_chick"
+        android:layout_width="305dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="308dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fried_chicken"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/chicken_nug"
+        android:layout_width="221dp"
+        android:layout_height="220dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/chicken_nuggets" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
